@@ -13,5 +13,7 @@ You can use python version which you want
 python3 -m venv myvenv
 source /booston_project/bin/activate
 which python3
+Commands to install setup.py
+python3 setup.py install
 
 ```
