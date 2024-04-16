@@ -24,6 +24,9 @@ def read_sql_data():
         )
         logging.info("Connection Established: {}".format(mydb))  # Properly format the log message
         df = pd.read_sql_query('SELECT * FROM dataset', mydb)
+        df.columns = df.iloc[0]
+        df = df[1:]
+        df.reset_index(drop=True, inplace=True)
         print(df.head())
         return df
     except Exception as ex:
