@@ -5,6 +5,8 @@ from src.mlops_project_setup.logger import logging
 import pandas as pd
 from dotenv import load_dotenv
 import pymysql
+import pickle
+import numpy as np
 
 load_dotenv()
 host = os.getenv("host")
@@ -33,3 +35,12 @@ def read_sql_data():
         # Properly handle exceptions
         logging.error("Error occurred while reading SQL data: {}".format(ex))
         raise CustomException(ex, sys)
+def save_model(file_path,obj):
+    try:
+        dir_path = os.path.dirname(file_path)
+        os.makedirs(dir_path,exist_ok=True)
+        with open(file_path, 'wb') as file:
+            pickle.dump(obj, file)
+        logging.info("Saving the pickle model")
+    except Exception as e:
+        raise CustomException(e,sys)
