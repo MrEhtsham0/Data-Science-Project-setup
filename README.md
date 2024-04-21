@@ -17,3 +17,8 @@ Commands to install setup.py
 python3 setup.py install
 
 ```
+
+MLFLOW_TRACKING_URI=https://dagshub.com/MrEhtsham0/Data-Science-Project-setup.mlflow \
+MLFLOW_TRACKING_USERNAME=MrEhtsham0 \
+MLFLOW_TRACKING_PASSWORD=ea18793b00f84d79faf65697e8604fc0576450a8 \
+python script.py

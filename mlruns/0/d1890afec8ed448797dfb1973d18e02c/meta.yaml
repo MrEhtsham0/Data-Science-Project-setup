@@ -1,0 +1,15 @@
+artifact_uri: file:///home/mr_ehtsham/Videos/Projects/Data-Science-Project-setup/mlruns/0/d1890afec8ed448797dfb1973d18e02c/artifacts
+end_time: 1713676936646
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d1890afec8ed448797dfb1973d18e02c
+run_name: grandiose-ray-829
+run_uuid: d1890afec8ed448797dfb1973d18e02c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1713676935147
+status: 3
+tags: []
+user_id: mr_ehtsham
